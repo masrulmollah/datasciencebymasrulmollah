@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+<h2>DATA SCIENCE BY MASRUL MOLLAH</h2>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'ABOUT ME')">ABOUT ME</button>
+  <button class="tablinks" onclick="openCity(event, 'WHO INVENTED ALGORITHOM')">WHO INVENTED ALGORITHOM</button>
+  <button class="tablinks" onclick="openCity(event, 'WHAT IS ALGORITHOM')">WHAT IS ALGORITHOM</button>
+  <button class="tablinks" onclick="openCity(event, 'HOW ALGORITHOM WORKS')">HOW ALGORITHOM WORKS</button>
+  </div>
+
+<div id="ABOUT ME" class="tabcontent">
+  <h3>ABOUT ME</h3>
+  <p>MD. MASRUL MOLLAH ACA, ACMA, CGMA</p>
+  <p>Mobile: +880(17) 39 573935</p>
+  <p>E-mail: masrulkpmg@gmail.com</p>
+  <p>LinkedIn: Md. Masrul Mollah ACA ACMA CGMA</p>
+  <p>Experienced finance professional having over 8 years and 3 months of extensive experience in supply chain finance, business finance, accounting, auditing, tax, VAT and transfer pricing including 4.5 years at KPMG Bangladesh and 3.9 years of corporate experience at Unilever Bangladesh.</p>
+</div>
+<div id="WHO INVENTED ALGORITHOM" class="tabcontent">
+  <h3>WHO INVENTED ALGORITHOM</h3>
+  <p>Algorithms have a long history and the word can be traced back to the 9th century. At this time the Persian scientist, astronomer and mathematician Abdullah Muhammad bin Musa al-Khwarizmi, often cited as “The father of Algebra”, was indirect responsible for the creation of the term “Algorithm”.</p>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/oRkNaF0QvnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  </div>
+<div id="WHAT IS ALGORITHOM" class="tabcontent">
+  <h3>WHAT IS ALGORITHOM</h3>
+  <p>An algorithm (pronounced AL-go-rith-um) is a procedure or formula for solving a problem, based on conducting a sequence of specified actions. A computer program can be viewed as an elaborate algorithm. In mathematics and computer science, an algorithm usually means a small procedure that solves a recurrent problem.</p>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/6hfOvs8pY1k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  </div>
+<div id="HOW ALGORITHOM WORKS" class="tabcontent">
+  <h3>HOW ALGORITHOM WORKS</h3>
+  <p>An algorithm, for the non-programmers among us, is a set of instructions that take an input, A, and provide an output, B, that changes the data involved in some way. Algorithms have a wide variety of applications. In math, they can help calculate functions from points in a data set, among much more advanced things.</p>
+  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/O6yWb1yVI2E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+  </div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
